@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<empleado apellidos="gutierrez" categoria="Programador" dni="2234234" nombre="pablo">
+    <actividad duracion="2" proyecto="Apple">djkbs</actividad>
+    <actividad duracion="3" proyecto="Amazon">gggggs</actividad>
+    <actividad duracion="5" proyecto="Apple">gggggs</actividad>
+</empleado>

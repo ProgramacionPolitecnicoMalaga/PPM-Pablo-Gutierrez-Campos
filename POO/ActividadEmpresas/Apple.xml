@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<proyecto departamento="Hola" fp="5.5" nombre="Apple">
+    <descripcion>32542</descripcion>
+    <actividad duracion="2">
+        <empleado apellidos="gutierrez" categoria="Programador" dni="2234234" nombre="pablo"/>
+    </actividad>
+    <actividad duracion="5">
+        <empleado apellidos="gutierrez" categoria="Programador" dni="2234234" nombre="pablo"/>
+    </actividad>
+</proyecto>
