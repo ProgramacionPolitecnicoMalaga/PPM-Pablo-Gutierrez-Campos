@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Activos>
+    <EnVenta>
+        <Venta Dirección="Calle 1" precio="1.0"/>
+        <Venta Dirección="Calle 2" precio="2.0"/>
+    </EnVenta>
+    <EnAlquiler>
+        <Alquiler Dirección="Calle 3" precio="3.0"/>
+        <Alquiler Dirección="Calle 4" precio="4.0"/>
+        <Alquiler Dirección="Calle 5" precio="5.0"/>
+    </EnAlquiler>
+</Activos>
