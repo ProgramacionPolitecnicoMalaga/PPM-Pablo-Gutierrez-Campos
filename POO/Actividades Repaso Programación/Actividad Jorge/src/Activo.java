@@ -18,9 +18,12 @@ public class Activo {
         this.precio = precio;
     }
 
-    public Activo(Dirección dirección, double precio) {
-        this.dirección = dirección;
+    public Activo(String dirección, double precio) {
+        this.dirección = new Dirección(dirección);
         this.precio = precio;
+    }
+
+    public Activo(Dirección direccion, double precio) {
     }
 
     public int getNumeroHabitaciones() {

@@ -15,6 +15,10 @@ public class Dirección {
         this.direccion = direccion;
     }
 
+    public Dirección() {
+    }
+
+
     public String getDireccion() {
         return direccion;
     }
