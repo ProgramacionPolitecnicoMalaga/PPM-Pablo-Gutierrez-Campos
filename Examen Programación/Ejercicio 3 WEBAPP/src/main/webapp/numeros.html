@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numeros</title>
+</head>
+<body>
+
+<input type="number" id="numeros1" name="numeros1">
+<input type="number" id="numeros2" name="numeros2">
+<input type="number" id="numeros3" name="numeros3">
+<button id="enviar" name="enviar">ENVIAR</button>
+<div id="mostrarResultado"></div>
+</body>
+
+<script>
+    var buttonEnviarNumeros = document.getElementById("enviar");
+    var inputNumeros1 = document.getElementById("numeros1");
+    var inputNumeros2 = document.getElementById("numeros2");
+    var inputNumeros3 = document.getElementById("numeros3");
+    var mostrarResultado = document.getElementById("mostrarResultado");
+
+    buttonEnviarNumeros.addEventListener("click",function(){
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST","numeros",true);
+        xhr.onreadystatechange = function(){
+            if ((xhr.readyState == 4) && (xhr.status == 200)){
+                let recibidoJson = JSON.parse(xhr.responseText);
+                if (recibidoJson.status == "ok") {
+                    mostrarResultado.innerHTML=recibidoJson.numeros;
+                }
+            }
+        }
+        xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+        xhr.send(JSON.stringify({anios:inputNumeros1.value}));
+        xhr.send(JSON.stringify({anios:inputNumeros2.value}));
+        xhr.send(JSON.stringify({anios:inputNumeros3.value}));
+    })
+</script>
+</html>
